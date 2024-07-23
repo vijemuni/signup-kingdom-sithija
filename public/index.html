@@ -271,7 +271,7 @@
                     showNotification('Login successful! Redirecting...', true);
                     localStorage.setItem('token', data.token);
                     setTimeout(() => {
-                        window.location.href = 'https://www.google.com';
+                        window.location.href = '../dashboard.html';
                     }, 2000);
                 } else {
                     showNotification(data.message || 'Invalid email or password', false);
